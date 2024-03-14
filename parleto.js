@@ -61,8 +61,7 @@ function get_median_of_first_week_expenses(expenses) {
     //----------------------------------------------SORTING EXPENSES & CALC MEDIAN
      
     expensesTotal.sort(function(a, b){
-            if (a > b) return 1;
-            if (a < b) return -1;
+            return a-b;
         });
 
         const length = expensesTotal.length;
